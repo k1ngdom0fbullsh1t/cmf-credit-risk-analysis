@@ -9,6 +9,9 @@ __pycache__/
 venv/
 .venv/
 
+# Entorno virtual local
+.venv/
+
 # Jupyter
 .ipynb_checkpoints/
 
