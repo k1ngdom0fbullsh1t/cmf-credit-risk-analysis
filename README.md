@@ -1,5 +1,7 @@
 # Análisis de Riesgo de Crédito — Sistema Bancario Chileno
 
+🔗 **[Ver dashboard en vivo](https://cmf-credit-risk-chile-mact.streamlit.app/)**
+
 Análisis exploratorio de los índices de provisiones por riesgo de crédito del sistema bancario chileno entre 2016 y 2026, basado en datos públicos de la Comisión para el Mercado Financiero (CMF).
 
 ## Descripción
