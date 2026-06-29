@@ -61,10 +61,10 @@ def extraer_cuadro1(ws, fecha: pd.Timestamp) -> list[dict]:
         registros.append({
             "fecha": fecha,
             "banco": limpiar_nombre_banco(banco),
-            "indice_total": row[2] if len(row) > 2 else None,
-            "indice_comercial": row[3] if len(row) > 3 else None,
-            "indice_consumo": row[4] if len(row) > 4 else None,
-            "indice_vivienda": row[5] if len(row) > 5 else None,
+            "indice_total": row[3] if len(row) > 3 else None,
+            "indice_comercial": row[4] if len(row) > 4 else None,
+            "indice_consumo": row[5] if len(row) > 5 else None,
+            "indice_vivienda": row[6] if len(row) > 6 else None,
         })
 
     return registros
@@ -89,11 +89,11 @@ def extraer_cuadro2(ws, fecha: pd.Timestamp) -> list[dict]:
         registros.append({
             "fecha": fecha,
             "banco": limpiar_nombre_banco(banco),
-            "indice_ev_individual": row[2] if len(row) > 2 else None,
-            "indice_ev_grupal": row[4] if len(row) > 4 else None,
-            "indice_cartera_normal": row[6] if len(row) > 6 else None,
-            "indice_cartera_subestandar": row[8] if len(row) > 8 else None,
-            "indice_cartera_incumplimiento": row[10] if len(row) > 10 else None,
+            "indice_ev_individual": row[3] if len(row) > 3 else None,
+            "indice_ev_grupal": row[5] if len(row) > 5 else None,
+            "indice_cartera_normal": row[8] if len(row) > 8 else None,
+            "indice_cartera_subestandar": row[10] if len(row) > 10 else None,
+            "indice_cartera_incumplimiento": row[12] if len(row) > 12 else None,
         })
 
     return registros
